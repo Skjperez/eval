@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+a@&kd%unj4^_-+_u9&tizf^lmv@d0xzqb%!!op7m^a7k7ivum
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['Shonnettas-MacBook-Pro.local','127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'eval.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'eval',
+        'USER': 'sjoh31',
+        'PASSWORD' : 'perez1991',
+        'HOST' : 'localhost',
+        'PORT' : '5432',
     }
 }
 
